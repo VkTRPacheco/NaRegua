@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const colaborador = new Schema({
+const cliente = new Schema({
     nome: {
         type: String,
         required: true,
@@ -36,51 +36,31 @@ const colaborador = new Schema({
         enum: ['A', 'I'],
         required: true,
         default: 'A'
-    },
-    contaBancaria: {
-        titular: {
-            type: String,
-            required: true
-        },
-        cpfCnpj: {
-            type: String,
-            required: true
-        },
-        banco: {
-            type: String,
-            required: true
-        },
+    },    
+    documento: {
         tipo: {
             type: String,
-            required: true
-        },
-        agencia: {
-            type: String,
+            enum: ['cpf', 'cnpj'],
             required: true
         },
         numero: {
             type: String,
             required: true
         },
-        dv: {
-            type: String,
-            required: true
-        },
-        },
-        recipientId: {
-            type: String,
-            required: true
-        },
-        dv: {
-            type: String,
-            required: true
-        },
-        dataCadastro: {
-            type: Date,
-            default: Date.now,
-        },
+    },
+    endereco: {
+        cidadae: String,
+        uf: String,
+        cep: String,
+        numero: String,
+        pais: String,
+    },
+    dataCadastro: {
+        type: Date,
+        default: Date.now,
+    },  
 });
 
 
 
-module.exports = mongoose.model('Colaborador', colaborador);
+module.exports = mongoose.model('Cliente', cliente);
