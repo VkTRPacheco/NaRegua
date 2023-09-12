@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URI = 'mongodb+srv://dbNaRegua:<dbNaReguaEtec>@clusterdev.t5gofav.mongodb.net/?retryWrites=true&w=majority';
+const URI = 'mongodb+srv://dbNaRegua:<dbNaRegua>@clusterdev.t5gofav.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
