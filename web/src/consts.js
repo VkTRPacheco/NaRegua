@@ -1,3 +1,4 @@
 export default {
-    salaoId
-}
+    salaoId: '',
+    clienteId: '',
+};
