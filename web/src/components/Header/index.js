@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header className="container-fluid d-flex justify-content-end">
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-itens-center">
                 <div>
                     <span className="d-block m-0 p-0 text-white">Barbearia X</span>
                     <small className="m-0 p-0">Plano Gold</small>

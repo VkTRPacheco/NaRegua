@@ -13,6 +13,7 @@
 }
 
 
+
 header {
     background-color: var(--primary);
 }
@@ -26,7 +27,7 @@ header > div {
 
 header > div:hover {
     background-color: rgba(0, 0, 0, 0.2);
-    transition: 0.5;
+    transition: 0.5s;
 }
 
 header img {
@@ -52,7 +53,7 @@ header small {
 sidebar {
     background-color: var(--dark);
 }
-
+ 
 sidebar ul li {
     list-style: none;
     width: 100%;
@@ -77,16 +78,16 @@ sidebar ul li a.active {
 }
 
 sidebar ul li a.active .mdi {
-    color: var(--primary)
+    color: var(--primary);
 }
 
 sidebar ul li a:visited, sidebar ul li a:focus {
-    color: #fff
-} 
+    color: #fff;
+}
 
 sidebar ul li a:hover {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 sidebar ul li a span.mdi {
@@ -94,6 +95,7 @@ sidebar ul li a span.mdi {
     margin: 0 15px;
 }
 
-sidebar ul li a span text {
+sidebar ul li a text {
     font-size: 14px;
 }
+
