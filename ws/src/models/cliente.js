@@ -52,8 +52,13 @@ const cliente = new Schema({
         cidadae: String,
         uf: String,
         cep: String,
+        logradouro: String,
         numero: String,
         pais: String,
+    },
+    custumerId: {
+        type: String,
+        required: true,
     },
     dataCadastro: {
         type: Date,
